@@ -5,7 +5,7 @@ const methodOverride = require("method-override");
 const app = express();
 
 mongoose
-  .connect("mongodb://20.0.153.128:10888/studentsDB", {
+  .connect("mongodb://20.0.153.128:10999/studentsDB", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -91,4 +91,7 @@ app.delete("/student/:id", async (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log("Server is running on port 3000"));
+// app.listen(3000, () => console.log("Server is running on port 3000"));
+
+app.use("/.netlify/functions/app", router);
+module.exports.handler = serverless(app);
