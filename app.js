@@ -95,3 +95,4 @@ app.delete("/student/:id", async (req, res) => {
 
 app.use("/.netlify/functions/app", router);
 module.exports.handler = serverless(app);
+
