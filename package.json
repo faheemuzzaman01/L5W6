@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "start": "node app.js"
+  "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -15,8 +15,6 @@
     "express": "^4.21.2",
     "method-override": "^3.0.0",
     "mongoose": "^8.12.1",
-    "netlify-cli": "19.0.3",
-    "netlify-lambda": "^2.0.16",
     "serverless-http": "^3.2.0"
   }
 }
