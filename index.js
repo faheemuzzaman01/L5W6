@@ -107,5 +107,7 @@ router.get("/", (req, res) => {
     res.send("App is running..");
 });
 
-app.use("/.netlify/functions/app", router);
-module.exports.handler = serverless(app);
+app.listen(3000, () => console.log("Server is running on port 3000"));
+
+// app.use("/.netlify/functions/app", router);
+// module.exports.handler = serverless(app);
