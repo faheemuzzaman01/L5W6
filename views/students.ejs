@@ -6,7 +6,7 @@
     <title>Students List</title>
 </head>
 <body>
-    <h1>Students List</h1>
+    <h1 style="color: red;">Students List</h1>
     <ul>
         <% students.forEach(student => { %>
             <li><a href="/student/<%= student._id %>"><%= student.name %> - <%= student.course %></a></li>
